@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funciones de resta, división, suma y multiplicación</title>
+</head>
+
+<body>
+
+    <section>
+        <p></p>
+        <form action="" id="frm">
+            <label for="">
+                Número 1:
+                <input type="text" id="textNumUno">
+            </label>
+            <label for="">
+                Número 2:
+                <input type="text" id="textNumDos">
+            </label>
+            <input type="button" name="btnSuma" id="btn_suma" value="+" onClick="operaciones(this)" />
+            <input type="button" name="btnResta" id="btn_resta" value="-" onClick="operaciones(this)" />
+            <input type="button" name="btnDiv" id="btn_div" value="/" onClick="operaciones(this)" />
+            <input type="button" name="btnMulti" id="btn_multi" value="*" onClick="operaciones(this)" />
+            <input type="button" name="btnPow" id="btn_pow" value="^" onClick="operaciones(this)" />
+        </form>
+    </section>
+
+    <p>
+        Resultado:
+        <input name="resultado" type="text" id="resultado" size="40" value="0"/>
+    </p>
+
+    <input type="button" name="btn_suma" id="btn_suma" value="Suma" onClick="Suma()" />
+    <input type="button" name="btn_resta" id="btn_resta" value="Resta" onClick="Resta()" />
+    <input type="button" name="btn_div" id="btn_div" value="División" onClick="Division()" />
+    <input type="button" name="btn_multi" id="btn_multi" value="Multiplicación" onClick="Multiplicacion()" />
+    <input type="button" name="btn_pow" id="btn_pow" value="Potenciación" onClick="potenciacion()" />
+</body>
+<script src="main.js"></script>
+
+</html>
